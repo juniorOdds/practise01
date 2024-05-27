@@ -12,6 +12,7 @@ html {
   display: flex;
   align-items: center;
 
+
 }
 
 
@@ -43,19 +44,34 @@ body {
 }
 
 #btn{
-  background: linear-gradient(to right, #56ccf2, #2f81edc0);
+  background: linear-gradient(to right, #0288ca, #47c8f2);
   margin-left: 50px;
-  width: 286px; ;
+  width: 266px; 
   height: 85px;
-  border-radius: 24px;
+  border-radius: 15px;
   border: 0px;
-  font-size: 20px;
-  font-family: 'inter';
   color: #ffffff;
+  cursor: pointer;
+  }
+#btn:hover{
+  background: #0288ca;
 }
-h1{font-size: 20px;
 
-  font-weight:450;}
+@keyframes wave {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+#btn:active {
+  animation: wave 0.3s ease;
+}
+
+h1{font-size: 30px;
+
+  font-weight:450;
+  font-family: 'inter';
+}
 
 @keyframes typing {
   from {
